@@ -68,4 +68,9 @@ jobs:
           java-version: ${{ matrix.java }}
           cache: 'maven'
       - name: Build with Maven
+        id: maven
         run: mvn clean test install javadoc:aggregate -Pci -Pe2e -B "-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
+        
+      - name: Result of the build
+        if: failure() && steps.maven.outcome == 'failure'
+        uses: mami0510/tache3/.github/actions/rickroll@main

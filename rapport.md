@@ -15,17 +15,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-# Tache 3
+# Tâche 3
 
 ## Semgrep pour la détection des vulnérabilités dans GitHub Actions
 
-### Objectif: 
+### Objectif
 
 L'objectif de la modification des workflows Github Actions est de faire échouer le build si une nouvelle vulnérabilité est introduite dans le code, meme si le code on possède déjà on ne veut pas en ajouter.
 
 En considère une vulnérabilité tout finding qui n'existait pas dans le code de base (baseline) et qui est détectée par Semgrep.
 
-### Conception: 
+### Conception
 
 #### Comparaison avec la baseline
 
