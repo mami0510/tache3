@@ -1,0 +1,13 @@
+name: "Rickroll"
+description: "affiche un faux lien vers never gonna give you up"
+runs:
+  # For more on composite actions, see:
+  # https://docs.github.com/en/actions/sharing-automations/creating-actions/creating-a-composite-action
+  using: composite
+  steps:
+    - shell: bash
+      run: | 
+        echo "::error::Un test a échoué. Voir la raison de l'erreur dans le résumé du job."
+        echo "### ❌ Un test a échoué" >> "$GITHUB_STEP_SUMMARY"
+        echo "[Voir la raison de l'erreur](https://youtu.be/dQw4w9WgXcQ)" >> "$GITHUB_STEP_SUMMARY"
+  
