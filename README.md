@@ -259,6 +259,9 @@ Aucune erreur n'a été signalée.
 - Le paquet `p/java` peut évoluer au fil du temps; les résultats correspondent à la configuration utilisée lors de l'exercice.
 - Les exemples introduits sont isolés ou activables explicitement. Ils montrent des motifs de code considérés comme dangereux par analyse statique, sans démontrer leur exploitation dans le fonctionnement normal de Tika.
 
+## Rickroll
+Un exemple du rickroll est dans [ce check](https://github.com/mami0510/tache3/actions/runs/43970253137)
+
 ## Utilisation de l'IA
 
 ChatGPT a été utilisé pour proposer des modifications Java, interpréter les résultats Semgrep et aider à rédiger la documentation.
